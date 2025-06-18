@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #28a745; /* Verde vibrante */
+    color: white;
+    text-align: center;
+    padding: 3em 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 2em auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+section {
+    margin-bottom: 3em;
+    padding: 1.5em;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #28a745;
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+h3 {
+    color: #007bff; /* Azul vibrante */
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 300px; /* Altura fixa para o placeholder da imagem */
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-top: 1.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#pilares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5em;
+}
+
+.pilar-card {
+    background-color: #e9f7ef; /* Um verde mais claro para os cards */
+    border: 1px solid #d4edda;
+    border-radius: 8px;
+    padding: 1.5em;
+    flex: 1;
+    min-width: 280px;
+    max-width: 32%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.pilar-card:hover {
+    transform: translateY(-5px);
+}
+
+.pilar-card h3 {
+    color: #28a745;
+    margin-top: 0;
+}
+
+.content-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-around;
+}
+
+.desafios, .oportunidades {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.desafios h3 {
+    color: #dc3545; /* Vermelho para desafios */
+}
+
+.oportunidades h3 {
+    color: #28a745; /* Verde para oportunidades */
+}
+
+ul {
+    list-style: disc;
+    margin-left: 1.5em;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5em 1em;
+    margin-top: 2em;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    main {
+        padding: 1em;
+        margin: 1em auto;
+    }
+
+    .pilar-card {
+        max-width: 100%;
+    }
+
+    .content-flex {
+        flex-direction: column;
+    }
+}
